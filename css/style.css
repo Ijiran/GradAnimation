@@ -1,0 +1,147 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/* 
+colorswitch(animation-name):选择器的 keyframe 名称;
+20s(animation-duration):颜色变换的周期时间;
+(animation-timing-function):动画的速度曲线;
+(animation-delay):动画开始之前的延迟;
+infinite(animation-iteration-count):播放动画的次数，可以是数值，也可以是infinite（无限次）;
+(animation-direction):是否应该轮流反向播放动画;
+ */
+.animat {
+	height: 1000px;
+	position: relative;
+	animation: colorswitch 20s infinite;
+	/* Firefox */
+	-moz-animation: colorswitch 20s infinite;
+	/* Safari and Chrome */
+	-webkit-animation: colorswitch 20s infinite;
+	/* Opera */
+	-o-animation: colorswitch 20s infinite;
+}
+
+@keyframes colorswitch {
+	0% {
+		background: #0087C9
+	}
+
+	16% {
+		background: #EF4A53
+	}
+
+	32% {
+		background: #FFB463
+	}
+
+	49% {
+		background: #33D5D4
+	}
+
+	65% {
+		background: #254356
+	}
+
+	81% {
+		background: #5B4097
+	}
+
+	100% {
+		background: #0087C9
+	}
+}
+
+/* Firefox */
+@-moz-keyframes colorswitch {
+	0% {
+		background: #0087C9
+	}
+
+	16% {
+		background: #EF4A53
+	}
+
+	32% {
+		background: #FFB463
+	}
+
+	49% {
+		background: #33D5D4
+	}
+
+	65% {
+		background: #254356
+	}
+
+	81% {
+		background: #5B4097
+	}
+
+	100% {
+		background: #0087C9
+	}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes colorswitch {
+	0% {
+		background: #0087C9
+	}
+
+	16% {
+		background: #EF4A53
+	}
+
+	32% {
+		background: #FFB463
+	}
+
+	49% {
+		background: #33D5D4
+	}
+
+	65% {
+		background: #254356
+	}
+
+	81% {
+		background: #5B4097
+	}
+
+	100% {
+		background: #0087C9
+	}
+}
+
+/* Opera */
+@-o-keyframes colorswitch {
+	0% {
+		background: #0087C9
+	}
+
+	16% {
+		background: #EF4A53
+	}
+
+	32% {
+		background: #FFB463
+	}
+
+	49% {
+		background: #33D5D4
+	}
+
+	65% {
+		background: #254356
+	}
+
+	81% {
+		background: #5B4097
+	}
+
+	100% {
+		background: #0087C9
+	}
+}
