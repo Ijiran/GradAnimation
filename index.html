@@ -6,6 +6,18 @@
 		<link type="text/css" rel="styleSheet" href="css/style.css" />
 	</head>
 	<body>
-		<div class="animat"></div>
+		<div id="animat" class="animat"></div>
 	</body>
+	<script>
+	
+		 var animat = document.getElementById("animat");
+		 animat.style.width = window.innerWidth + "px";
+		 animat.style.height = window.innerHeight + "px";
+		 
+		 window.onresize = function(){
+			 animat.style.width = window.innerWidth + "px";
+			 animat.style.height = window.innerHeight + "px";
+		 }
+		 
+	</script>
 </html>
